@@ -70,4 +70,3 @@ counters.forEach(counter=>{
     observer.observe(counter);
 
 });
-console.log()
