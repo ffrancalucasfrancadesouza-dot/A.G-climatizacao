@@ -1,5 +1,5 @@
 // // Header Sroll
-console.log("errorrrrrrrr")
+console.log("erorrrr")
 
 // const header = document.querySelector(".header");
 
