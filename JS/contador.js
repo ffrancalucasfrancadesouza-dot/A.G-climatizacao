@@ -1,3 +1,10 @@
+const lenis = new Lenis({
+    autoRaf: true,
+    duration: 1.2,
+    smoothWheel: true
+});
+
+
 // // Header Sroll
 
 const header = document.querySelector(".header");
