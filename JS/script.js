@@ -1,72 +1,73 @@
-// Header Sroll
+// // Header Sroll
+console.log("errorrrrrrrr")
 
-const header = document.querySelector(".header");
+// const header = document.querySelector(".header");
 
-window.addEventListener("scroll",()=>{
+// window.addEventListener("scroll",()=>{
 
-    if(window.scrollY > 50){
+//     if(window.scrollY > 50){
 
-        header.classList.add("scroll");
+//         header.classList.add("scroll");
 
-    }else{
+//     }else{
 
-        header.classList.remove("scroll");
+//         header.classList.remove("scroll");
 
-    }
+//     }
 
-});
-//================ CONTADOR =================//
+// });
+// //================ CONTADOR =================//
 
-const counters = document.querySelectorAll(".counter");
+// const counters = document.querySelectorAll(".counter");
 
-const startCounter = (counter) => {
+// const startCounter = (counter) => {
 
-    const target = +counter.getAttribute("data-target");
+//     const target = +counter.getAttribute("data-target");
 
-    let count = 0;
+//     let count = 0;
 
-    const increment = target / 100;
+//     const increment = target / 100;
 
-    const update = () => {
+//     const update = () => {
 
-        count += increment;
+//         count += increment;
 
-        if(count < target){
+//         if(count < target){
 
-            counter.innerText = Math.floor(count);
+//             counter.innerText = Math.floor(count);
 
-            requestAnimationFrame(update);
+//             requestAnimationFrame(update);
 
-        }else{
+//         }else{
 
-            counter.innerText = target + "+";
+//             counter.innerText = target + "+";
 
-        }
+//         }
 
-    };
+//     };
 
-    update();
+//     update();
 
-};
+// };
 
-const observer = new IntersectionObserver((entries)=>{
+// const observer = new IntersectionObserver((entries)=>{
 
-    entries.forEach(entry=>{
+//     entries.forEach(entry=>{
 
-        if(entry.isIntersecting){
+//         if(entry.isIntersecting){
 
-            startCounter(entry.target);
+//             startCounter(entry.target);
 
-            observer.unobserve(entry.target);
+//             observer.unobserve(entry.target);
 
-        }
+//         }
 
-    });
+//     });
 
-});
+// });
 
-counters.forEach(counter=>{
+// counters.forEach(counter=>{
 
-    observer.observe(counter);
+//     observer.observe(counter);
 
-});
+// });
