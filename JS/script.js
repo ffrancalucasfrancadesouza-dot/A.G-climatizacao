@@ -1,5 +1,5 @@
 // Header Sroll
-console.log("aaaaaaaaaaa")
+
 const header = document.querySelector(".header");
 
 window.addEventListener("scroll",()=>{
